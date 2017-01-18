@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Lshape z liczbą podziałów</title>
+  <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.8.1/math.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="lshape.js"></script>
+  <script type="text/javascript" src="show_plot.js"></script>
+  <style>
+  #content {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  #divisions {
+    padding: 10px;
+    min-width: 100px;
+    height: 20px;
+  }
+  #show_plot {
+    height: 40px;
+  }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <input id="divisions" type="number" value="1" min="1" placeholder="Liczba podziałów" />
+    <button id="show_plot">Pokaż wykres</button>
+    <div id="plot">
+    </div>
+  </div>
+</body>
+</html>
